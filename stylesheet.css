@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font: 600 1.5em/1 'Raleway', sans-serif;
+    color: rgba(31, 31, 31, 0.5);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    line-height: 2em;
+    /* position: absolute;
+    top: 25%;
+    width: 100%; */
+}
+
+.box {
+    width: 100％; 
+    height: auto;
+    min-height: 100vh;
+    /* 縦横中央配置 */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; 
+    -webkit-flex-direction: column; 
+    -ms-flex-direction: column; 
+    flex-direction: column;
+
+    -webkit-box-align: center; 
+    -ms-flex-align: center; 
+    -webkit-align-items: center; 
+    align-items: center; 
+
+    -webkit-box-pack: center; 
+    -ms-flex-pack: center; 
+    -webkit-justify-content: center; 
+    justify-content: center;
+/*  justify-content: flex-start; // 上寄  
+    justify-content: center; // 中央寄  
+    justify-content: flex-end; // 下寄 
+    align-items: flex-start; // 左寄  
+    align-item: center; // 中央寄  
+    align-item: flex-end; //  右寄  */
+    /* 背景画像設定 */
+}
+
+.box__bg_photo {
+    /* background-image: url("image1.jpeg");  */
+    background-size: cover;
+    background-position: center;
+}
+
+/* グラデーション */
+#square {
+    /* background-color: aquamarine; */
+    background: #007991;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #78ffd6, #007991);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #78ffd6, #007991); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    opacity: 0.8;
+    padding: 10px;
+}
+
+/* アニメーション */
+#square {
+    animation: fadeIn 15s ease 0s 1 normal;
+    -webkit-animation: fadeIn 15s ease 0s 1 normal;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0}
+    50% {opacity: 0.5}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0}
+    50% {opacity: 0.5}
+}
+
+
+@media screen and (max-width: 480px) {
+    #square{
+        width: 300px;
+        font-size: 1em;    
+    }
+    h1 {
+        letter-spacing: 0.1em;
+         line-height: 1.5em;
+    }
+}
+  
+  
+  
